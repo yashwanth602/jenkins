@@ -1,0 +1,34 @@
+Started by GitHub push by yashwanth602
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/job1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yashwanth602/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/yashwanth602/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/yashwanth602/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 59e91b982c25daac397d99136918c0571ed4e57c (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 59e91b982c25daac397d99136918c0571ed4e57c # timeout=10
+Commit message: "Update temo"
+ > git rev-list --no-walk 676199a50a46ba68497b2100644ffb0a3b08ebd8 # timeout=10
+[job1] $ /bin/sh -xe /tmp/jenkins6730274167735680506.sh
++ ls -ltr
+total 56
+-rw-r--r--. 1 jenkins jenkins    11 Sep 10 06:32 test file
+-rw-r--r--. 1 jenkins jenkins     0 Sep 10 06:32 test2
+-rw-r--r--. 1 jenkins jenkins   154 Sep 10 06:32 makefile
+-rw-r--r--. 1 jenkins jenkins  1432 Sep 10 06:32 main.o
+-rw-r--r--. 1 jenkins jenkins    39 Sep 10 06:32 main.c
+-rw-r--r--. 1 jenkins jenkins  1896 Sep 10 06:32 fact.o
+-rw-r--r--. 1 jenkins jenkins   447 Sep 10 06:32 fact.c
+-rw-r--r--. 1 jenkins jenkins  2000 Sep 10 06:32 big3.o
+-rw-r--r--. 1 jenkins jenkins   573 Sep 10 06:32 big3.c
+-rwxr-xr-x. 1 jenkins jenkins 17696 Sep 10 06:32 ABC.exe
+-rw-r--r--. 1 jenkins jenkins    33 Sep 10 06:46 temo
+Triggering a new build of [8mha:////4FlAfJVRvPlNmiVSB9rQl49HHWUFndtpnXpGHOlu1TtgAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JBA20gcA5LmiNr8AAAA=[0mjob2
+Finished: SUCCESS

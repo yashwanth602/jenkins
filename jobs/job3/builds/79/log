@@ -1,0 +1,27 @@
+Started by timer
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/job3
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/yashwanth602/c-project.git
+ > git init /var/lib/jenkins/workspace/job3 # timeout=10
+Fetching upstream changes from https://github.com/yashwanth602/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/yashwanth602/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/yashwanth602/c-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 3fe8f2c8c8f8e3299468628706f468438141b698 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3fe8f2c8c8f8e3299468628706f468438141b698 # timeout=10
+Commit message: "Update test2"
+ > git rev-list --no-walk 3fe8f2c8c8f8e3299468628706f468438141b698 # timeout=10
+[job3] $ /bin/sh -xe /tmp/jenkins11102436980000027077.sh
++ touch yash
+Finished: SUCCESS

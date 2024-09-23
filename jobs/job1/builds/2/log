@@ -1,0 +1,33 @@
+Started by user [8mha:////4FXX2rgodtdFRzlNIvGtNNwI1LjZ00qR/a7ufIJ0e8jUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0myash
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/job1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yashwanth602/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/yashwanth602/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/yashwanth602/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 1b741744684a6ff6ce4c862c4d10113352b9403f (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1b741744684a6ff6ce4c862c4d10113352b9403f # timeout=10
+Commit message: "Create tem"
+ > git rev-list --no-walk 1b741744684a6ff6ce4c862c4d10113352b9403f # timeout=10
+[job1] $ /bin/sh -xe /tmp/jenkins16274204899602540659.sh
++ ls -ltr
+total 56
+-rw-r--r--. 1 jenkins jenkins    11 Sep 10 06:32 test file
+-rw-r--r--. 1 jenkins jenkins     0 Sep 10 06:32 test2
+-rw-r--r--. 1 jenkins jenkins     9 Sep 10 06:32 temo
+-rw-r--r--. 1 jenkins jenkins   154 Sep 10 06:32 makefile
+-rw-r--r--. 1 jenkins jenkins  1432 Sep 10 06:32 main.o
+-rw-r--r--. 1 jenkins jenkins    39 Sep 10 06:32 main.c
+-rw-r--r--. 1 jenkins jenkins  1896 Sep 10 06:32 fact.o
+-rw-r--r--. 1 jenkins jenkins   447 Sep 10 06:32 fact.c
+-rw-r--r--. 1 jenkins jenkins  2000 Sep 10 06:32 big3.o
+-rw-r--r--. 1 jenkins jenkins   573 Sep 10 06:32 big3.c
+-rwxr-xr-x. 1 jenkins jenkins 17696 Sep 10 06:32 ABC.exe
+Finished: SUCCESS

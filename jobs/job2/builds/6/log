@@ -1,0 +1,30 @@
+Started by upstream project "[8mha:////4CJ5ZdAJN2jcMord80cXWH26bmu1/G+gN9RUPIscuVOkAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JBA21AcAJ+qPHb8AAAA=[0mjob1" build number [8mha:////4GbSlRrHS6D0lJZLjtvh36tn3o0KSYnOfvqViw7OIJwVAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBm79rPwkEDbUtwQA4K8ygMAAAAA=[0m9
+originally caused by:
+ Started by user [8mha:////4FXX2rgodtdFRzlNIvGtNNwI1LjZ00qR/a7ufIJ0e8jUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0myash
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/job2
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/yashwanth602/c-project.git
+ > git init /var/lib/jenkins/workspace/job2 # timeout=10
+Fetching upstream changes from https://github.com/yashwanth602/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/yashwanth602/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/yashwanth602/c-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 3fe8f2c8c8f8e3299468628706f468438141b698 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3fe8f2c8c8f8e3299468628706f468438141b698 # timeout=10
+Commit message: "Update test2"
+ > git rev-list --no-walk 3fe8f2c8c8f8e3299468628706f468438141b698 # timeout=10
+[job2] $ /bin/sh -xe /tmp/jenkins14029406496602656096.sh
++ cd /var/lib/jenkins/workspace
+Triggering a new build of [8mha:////4GC/fdAMpgU1N5WDb7LBRuVy0IyEsw4rYCQLJ8SBKoQ0AAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JBA21gcApYi5L78AAAA=[0mjob3
+Finished: SUCCESS

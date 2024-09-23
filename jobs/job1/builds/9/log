@@ -1,0 +1,37 @@
+Started by user [8mha:////4FXX2rgodtdFRzlNIvGtNNwI1LjZ00qR/a7ufIJ0e8jUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0myash
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/job1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/job1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yashwanth602/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/yashwanth602/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/yashwanth602/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 3fe8f2c8c8f8e3299468628706f468438141b698 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3fe8f2c8c8f8e3299468628706f468438141b698 # timeout=10
+Commit message: "Update test2"
+ > git rev-list --no-walk 3fe8f2c8c8f8e3299468628706f468438141b698 # timeout=10
+No emails were triggered.
+[job1] $ /bin/sh -xe /tmp/jenkins16649769954904465306.sh
++ ls -ltr
+total 60
+-rwxr-xr-x. 1 jenkins jenkins 17696 Sep 18 09:20 ABC.exe
+-rw-r--r--. 1 jenkins jenkins   573 Sep 18 09:20 big3.c
+-rw-r--r--. 1 jenkins jenkins  2000 Sep 18 09:20 big3.o
+-rw-r--r--. 1 jenkins jenkins   447 Sep 18 09:20 fact.c
+-rw-r--r--. 1 jenkins jenkins  1896 Sep 18 09:20 fact.o
+-rw-r--r--. 1 jenkins jenkins    39 Sep 18 09:20 main.c
+-rw-r--r--. 1 jenkins jenkins   154 Sep 18 09:20 makefile
+-rw-r--r--. 1 jenkins jenkins  1432 Sep 18 09:20 main.o
+-rw-r--r--. 1 jenkins jenkins    33 Sep 18 09:20 temo
+-rw-r--r--. 1 jenkins jenkins    11 Sep 18 09:20 test file
+-rw-r--r--. 1 jenkins jenkins    18 Sep 18 09:20 test2
+Sending e-mails to: darshanvishwanath96@gmail.com
+No emails were triggered.
+Triggering a new build of [8mha:////4FlAfJVRvPlNmiVSB9rQl49HHWUFndtpnXpGHOlu1TtgAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JBA20gcA5LmiNr8AAAA=[0mjob2
+Finished: SUCCESS

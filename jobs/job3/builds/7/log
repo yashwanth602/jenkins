@@ -1,0 +1,31 @@
+Started by upstream project "[8mha:////4FlAfJVRvPlNmiVSB9rQl49HHWUFndtpnXpGHOlu1TtgAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JBA20gcA5LmiNr8AAAA=[0mjob2" build number [8mha:////4DfZ/s+wPMGSaHderG6ewciCp9h9FShpbkRWDg2aa3oRAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBm79rPwkEDbSNwEABG3F/MAAAAA=[0m4
+originally caused by:
+ Started by upstream project "[8mha:////4CJ5ZdAJN2jcMord80cXWH26bmu1/G+gN9RUPIscuVOkAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JBA21AcAJ+qPHb8AAAA=[0mjob1" build number [8mha:////4GzNse+Ra7Hj2XSkm8yFYG7jfx4/7+U12q/miCyUfMOjAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBm79rPwkEDbUNwMAcbKNEMAAAAA=[0m6
+ originally caused by:
+  Started by GitHub push by yashwanth602
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job3
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/yashwanth602/c-project.git
+ > git init /var/lib/jenkins/workspace/job3 # timeout=10
+Fetching upstream changes from https://github.com/yashwanth602/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/yashwanth602/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/yashwanth602/c-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 3fe8f2c8c8f8e3299468628706f468438141b698 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3fe8f2c8c8f8e3299468628706f468438141b698 # timeout=10
+Commit message: "Update test2"
+ > git rev-list --no-walk 3fe8f2c8c8f8e3299468628706f468438141b698 # timeout=10
+[job3] $ /bin/sh -xe /tmp/jenkins2014164231876114891.sh
++ touch yash
+Finished: SUCCESS

@@ -1,0 +1,24 @@
+Started by user [8mha:////4FXX2rgodtdFRzlNIvGtNNwI1LjZ00qR/a7ufIJ0e8jUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0myash
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/job1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/job1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yashwanth602/react-hello-world.git # timeout=10
+Fetching upstream changes from https://github.com/yashwanth602/react-hello-world.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/yashwanth602/react-hello-world.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 008bb0187aaa7de9e5d3493949c26d37bfbae787 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 008bb0187aaa7de9e5d3493949c26d37bfbae787 # timeout=10
+Commit message: "Merge pull request #1 from yashwanth602/yashwanth602-patch-1"
+First time build. Skipping changelog.
+[job1] $ /bin/sh -xe /tmp/jenkins10157813067792468989.sh
++ make
+/tmp/jenkins10157813067792468989.sh: line 2: make: command not found
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: darshanvishwanath96@gmail.com
+Finished: FAILURE

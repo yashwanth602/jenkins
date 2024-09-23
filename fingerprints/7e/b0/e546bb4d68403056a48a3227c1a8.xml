@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-09-12 13:14:00.7 UTC</timestamp>
+  <md5sum>7eb0e546bb4d68403056a48a3227c1a8</md5sum>
+  <fileName>Credential id=yashnode name=ubuntu (to learn master nad slave)</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1371.vfee6b_095f0a_3">
+      <timestamp>1727100127480</timestamp>
+      <nodeName>yash</nodeName>
+      <timestamp0>1727099287565</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

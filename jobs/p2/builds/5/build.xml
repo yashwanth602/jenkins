@@ -1,0 +1,326 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1436.vfa_244484591f">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.21-451.vd51df8df52ec">
+      <queuingDurationMillis>4</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>3</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@730.ve57b_34648c63">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2214.vb_b_34b_2ea_9b_83">
+      <stagesUUID>4e4112f5-7e11-4a5f-befe-3d8298825a5b</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2214.vb_b_34b_2ea_9b_83">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <agent>
+                  <agentType>
+                    <key>any</key>
+                  </agentType>
+                </agent>
+                <name>BUILD</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">
+                    #!/bin/bash 
+                    pwd 
+                    ls
+                    echo &quot;This is a BUILD stage&quot;
+                    sleep 5
+                </value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <agent>
+                  <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                    <value class="string">slave</value>
+                  </variables>
+                  <agentType>
+                    <key>label</key>
+                  </agentType>
+                </agent>
+                <name>DEPLOY</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>echo</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>message</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">This is a DEPLOY stage</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">sleep 5</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>TESTING</name>
+                <branches/>
+                <parallel>
+                  <stages>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <agent>
+                        <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                          <value class="string">yash</value>
+                        </variables>
+                        <agentType>
+                          <key>label</key>
+                        </agentType>
+                      </agent>
+                      <name>TESTING1</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>sh</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>script</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">echo &quot;This is a TESTING1 stage&quot;</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>sh</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>script</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">sleep 5</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <agent>
+                        <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                          <value class="string">master</value>
+                        </variables>
+                        <agentType>
+                          <key>label</key>
+                        </agentType>
+                      </agent>
+                      <name>TESTING2</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>sh</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>script</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">
+                            echo &quot;This is a TESTING2 stage&quot;
+                            sleep 5
+                        </value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                  </stages>
+                  <uuid>70dbc6df-696f-4335-805e-bde1c126ebcd</uuid>
+                </parallel>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>4e4112f5-7e11-4a5f-befe-3d8298825a5b</uuid>
+          </stages>
+          <agent>
+            <agentType>
+              <key>none</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.2.21-451.vd51df8df52ec">
+      <queuingDurationMillis>19</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>12</buildableDurationMillis>
+      <waitingDurationMillis>5</waitingDurationMillis>
+      <executingDurationMillis>5557</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes>
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>admin</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+  </actions>
+  <queueId>115</queueId>
+  <timestamp>1726658138398</timestamp>
+  <startTime>1726658138401</startTime>
+  <result>ABORTED</result>
+  <duration>250188</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>ABORTED</result>
+    <script>pipeline {
+    agent none 
+    stages {
+        stage(&apos;BUILD&apos;) {
+            agent any
+            steps {
+                sh &apos;&apos;&apos;
+                    #!/bin/bash 
+                    pwd 
+                    ls
+                    echo &quot;This is a BUILD stage&quot;
+                    sleep 5
+                &apos;&apos;&apos;  
+            }
+        }
+        stage(&apos;DEPLOY&apos;) {
+            agent { label &apos;slave&apos; } 
+            steps {
+                echo &quot;This is a DEPLOY stage&quot;
+                sh &apos;sleep 5&apos;
+            }
+        }
+        stage(&apos;TESTING&apos;) {
+            parallel {
+                stage(&apos;TESTING1&apos;) {
+                    agent { label &apos;yash&apos; } 
+                    steps {
+                        sh &apos;echo &quot;This is a TESTING1 stage&quot;&apos;
+                        sh &apos;sleep 5&apos;
+                    }
+                }
+                stage(&apos;TESTING2&apos;) {
+                    agent { label &apos;master&apos; } 
+                    steps {
+                        sh &apos;&apos;&apos;
+                            echo &quot;This is a TESTING2 stage&quot;
+                            sleep 5
+                        &apos;&apos;&apos;
+                    }
+                }
+                
+        }    
+    }
+} }</script>
+    <loadedScripts class="linked-hash-map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>277114181</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>450274432</long>
+      </entry>
+      <entry>
+        <string>runQueue</string>
+        <long>1877258803</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1187141616</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>77034004</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>274458914</long>
+      </entry>
+    </timings>
+    <internalCalls class="sorted-set">
+      <string>org.jenkinsci.plugins.pipeline.StageStatus.TAG_NAME</string>
+    </internalCalls>
+    <sandbox>true</sandbox>
+    <iota>40</iota>
+    <head>1:40</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+    <storageDir>workflow-completed</storageDir>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
